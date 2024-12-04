@@ -8,18 +8,93 @@
 </head>
 <body>
     <!-- Judul Website -->
-    <header>
+    <header class="main-header">
         <h1>Kalkulator BMI</h1>
     </header>
 
     <!-- Konten Website -->
-     <main>
+     <main class="main">
+        <!-- Section Kalkulasi -->
+        <section class="main-section">
+            <!-- First Article -->
+            <article>
+                Berat badan ideal adalah impian setiap orang. Tidak hanya memiliki tubuh yang menunjang penampilan, 
+                berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? <br>
+                Yuk, hitung sekarang di kalkulator BMI.
+            </article>
+            <!-- Form input untuk data kalkulasi BMI -->
+            <form id="input-form">
+                <div class="gender-option">
+                        <input type="radio" name="gender" value="male" onclick="displayChoice()">Laki-laki
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" onclick="displayChoice()">Perempuan
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label for="usia-input">
+                        Usia (Tahun):
+                    </label>
+                    <input type="number" id="usia-input" placeholder="Tahun" required/>
+                </div>
+                <div class="form-item">
+                    <label for="berat-badan-input">
+                        Berat Badan (Kg):
+                    </label>
+                    <input type="number" id="berat-badan-input" placeholder="Kg" required/>
+                </div>
+                <div class="form-item">
+                    <label for="tinggi-badan-input">
+                        Tinggi Badan (cm):
+                    </label>
+                    <input type="number" id="tinggi-badan-input" placeholder="cm" required/>
+                </div>
+                <!-- Action button untuk perhitungan BMI dan reset  -->
+                <div class="button-content">
+                    <button type="button" class="bg-color-green" id="calculate-button" onclick="validateForm()">Hitung BMI</button>
+                    <button type="button" class="bg-color-red" id="reset-button" onclick="resetBmi()">Reset</button>
+                </div>
+            </form>
+            <!-- Second Article -->
+            <article>
+                <header>
+                    <h3>Keunggulan Fitur</h3>
+                </header>
+                <ol class="list-fitur-bmi">
+                    <li>Menghitung berat badan</li>
+                    <li>Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ol>
+                <p>
+                    Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                </p>
+                <p>
+                    Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI=Kg/M<sup>2</sup>.
+                </p>
+            </article>
+        </section>
 
+        <!-- Section Hasil Kalkulasi -->
+        <section class="main-section">
+            <header class="header-hasil">
+                <h2>Hasil</h2>
+            </header>
+            <div class="hasil-kalkulasi">    
+                <p id="weight-result"></p>
+                <p id="bmi-result"></p>
+                <p id="explanation-result"></p>
+                <button type="button" class="bg-color-green">Download Hasil BMI</button>
+            </div>
+            <div>
+                <p>BMI tidak sepenuhnya mewakili diagnosa menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+            </div>
+        </section>
      </main>
 
      <!-- Footer Website -->
      <footer>
         <p>Made by Sentana@2024</p>
      </footer>
+     <script src="js\script.js"></script>
 </body>
 </html>

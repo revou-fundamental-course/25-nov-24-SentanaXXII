@@ -1,0 +1,119 @@
+/* ini file css */
+
+/* Set display flexbox */
+.main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Menampilkan header di tengah */
+.main-header{
+    text-align: center;
+}
+
+/* Set default width main section */
+.main-section{
+    width: 40%;
+}
+
+/* Menampilkan footer di tengah */
+footer{
+    text-align: center;
+}
+
+/* Styling form input */
+form{
+    background: beige;
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+/* Set display flexbox */
+.form-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling input box */
+input[type=number]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Styling form hasil kalkulasi */
+.hasil-kalkulasi{
+    text-align: center;
+    background: beige;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+/* Menampilkan header di tengah form */
+h2{
+    text-align: center;
+    margin: 0;
+}
+
+/* Menampilkan gender option di tengah form */
+.gender-option{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* Menampilkan button di tengah form */
+.button-content{
+    text-align: center;
+}
+
+/* Set padding fitur BMI */
+.list-fitur-bmi{
+    padding-left: 25px;
+}
+
+/* Styling button */
+button {
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+  
+button:hover {background-color: #3e8e41}
+
+/* Animasi button saat di tekan */
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+/* Responsive display */
+@media only screen and (max-width: 700px) {
+    .main {   
+      flex-direction: column;
+    }
+    .main-section {   
+        width: 100%;
+    }
+}
+
+/* Background warna hijau */
+.bg-color-green{
+    background-color: #04AA6D;
+}
+
+/* Background warna merah */
+.bg-color-red{
+    background-color: crimson;
+}
