@@ -2,17 +2,18 @@
 
 // Validasi form input
 function validateForm() {
-  let inputBeratBadan = parseInt(document.getElementById('berat-badan-input').value);
+  let inputBeratBadan = document.getElementById('berat-badan-input').value;
   let inputUsia = document.getElementById('usia-input').value;
-  let inputTinggiBadan = parseFloat(document.getElementById('tinggi-badan-input').value)/100;
+  let inputTinggiBadan = document.getElementById('tinggi-badan-input').value/100;
 
-  if (inputBeratBadan != '' && inputUsia != '' && inputTinggiBadan != '') {
-      let calculate = (inputBeratBadan/(inputTinggiBadan * inputTinggiBadan)).toFixed(2);
-      updateResult(calculate);
-  } else {
-      alert('Inputan Anda Kosong! Mohon Cek Kembali');
-      document.getElementById('weight-result').textContent = '';
-      document.getElementById('explanation-result').textContent = '';
+  if (inputBeratBadan != '' && inputTinggiBadan != '' && inputUsia != '') {
+    let calculate = (inputBeratBadan/(inputTinggiBadan * inputTinggiBadan)).toFixed(2);
+    updateResult(calculate);
+  } 
+  else {
+    alert('Inputan Anda Kosong! Mohon Cek Kembali');
+    document.getElementById('weight-result').textContent = '';
+    document.getElementById('explanation-result').textContent = '';
   }
 }
 
@@ -34,14 +35,6 @@ function updateResult(value) {
     document.getElementById('explanation-result').textContent = 'Anda berada dalam kategori obesitas';
   }
 
-}
-
-function displayChoice() {
-  // Mendapatkan elemen radio button yang dipilih
-  const selectedOption = document.querySelector('input[name="gender"]:checked');
-  if (selectedOption) {
-    console.log("Jenis Kelamin: " + selectedOption.value);
-  }
 }
 
 // Tombol reset form dan hasil

@@ -9,6 +9,9 @@
 /* Menampilkan header di tengah */
 .main-header{
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 /* Set default width main section */
@@ -23,6 +26,7 @@ footer{
 
 /* Styling form input */
 form{
+    color: black;
     background: beige;
     margin-top: 20px;
     padding: 16px;
@@ -49,6 +53,7 @@ input[type=number]{
 
 /* Styling form hasil kalkulasi */
 .hasil-kalkulasi{
+    color: black;
     text-align: center;
     background: beige;
     padding: 16px;
@@ -116,4 +121,9 @@ button:active {
 /* Background warna merah */
 .bg-color-red{
     background-color: crimson;
+}
+
+/* Styling bmi result */
+.bmi-result{
+    font-size: 250%;
 }

@@ -25,10 +25,10 @@
             <!-- Form input untuk data kalkulasi BMI -->
             <form id="input-form">
                 <div class="gender-option">
-                        <input type="radio" name="gender" value="male" onclick="displayChoice()">Laki-laki
+                        <input type="radio" name="gender" value="male">Laki-laki
                     </label>
                     <label>
-                        <input type="radio" name="gender" value="female" onclick="displayChoice()">Perempuan
+                        <input type="radio" name="gender" value="female">Perempuan
                     </label>
                 </div>
                 <div class="form-item">
@@ -81,13 +81,17 @@
             </header>
             <div class="hasil-kalkulasi">    
                 <p id="weight-result"></p>
-                <p id="bmi-result"></p>
+                <p id="bmi-result" class="bmi-result"></p>
                 <p id="explanation-result"></p>
                 <button type="button" class="bg-color-green">Download Hasil BMI</button>
             </div>
-            <div>
-                <p>BMI tidak sepenuhnya mewakili diagnosa menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
-            </div>
+            
+            <!-- Third Article -->
+            <article>
+                <p>
+                    BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+                </p>
+            </article>
         </section>
      </main>
 
